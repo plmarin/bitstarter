@@ -6,7 +6,8 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   //response.send('Hello World 2!');
-  response.send(index);
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end(index);
 });
 
 var port = process.env.PORT || 5000;
