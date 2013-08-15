@@ -13,7 +13,7 @@ fs.readFile('index.html', function (err, html) {
   });
 });
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
